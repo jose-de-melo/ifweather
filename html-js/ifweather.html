@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/person.css">
+
+    <title>IFWeather</title>
+    <link rel="shortcut icon" href="assets/img/01d.png" type="image/x-icon" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  </head>
+  <body class="bg-light">
+        <div class="shadow container">
+                <br>
+                <div style="text-align: center">
+                    <span>IFWeather - Veja como está o tempo na sua cidade! </span>
+                </div>
+
+                <br>
+
+                <div class="row justify-content-md-center" style="width: 100vh">
+                        <div class="col-lg-11 col-sg-10">
+                            <input id="inputCity" class="form-control" type="search" placeholder="Nome da Cidade" aria-label="Consultar">
+                        </div>
+        
+                        <div class="col-lg-1 col-sg-10">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="pesquisarCidade()" style="width: 250px">Consultar</button>
+                        </div>
+                    </div>
+            <br>
+
+        </div>
+
+        <div id="marcador">
+            <br>
+        </div>
+
+    
+    <!-- API Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLQhEQttK12GD9rT1M611Uku50XOjvQYM"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript (Opcional) -->
+    <script src="assets/js/weather.js"></script>
+    <script src="assets/js/fold-to-ascii.js"></script>
+  </body>
+</html>
